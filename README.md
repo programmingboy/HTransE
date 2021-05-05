@@ -1,8 +1,8 @@
 
-# HRotatE: Hybrid Relational Rotation Embedding for Knowledge Graph
+# HTransE: Hybrid Translation-based Embedding for Knowledge Graphsh
 **Introduction**
 
-This is the PyTorch implementation of the [HRotatE] model for knowledge graph embedding (KGE). 
+This is the PyTorch implementation of the [HTransE] model for knowledge graph embedding (KGE). 
 
 This code is updated version of RotatE code(https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding)
 
@@ -10,6 +10,7 @@ This code is updated version of RotatE code(https://github.com/DeepGraphLearning
 **Implemented features**
 
 Models:
+ - [x] HTransE
  - [x] HRotatE
  - [x] RotatE
  - [x] pRotatE
@@ -59,7 +60,7 @@ CUDA_VISIBLE_DEVICES=0 python -u codes/run.py --do_train \
 
 **Reproducing the best results**
 
-To reprocude the best results, you can run the bash commands in best_config.sh to get the best performance of HRotatE, RotatE, TransE, and ComplEx on five widely used datasets (FB15k, FB15k-237, wn18, wn18rr, Yago3-10).
+To reprocude the best results, you can run the bash commands in best_config.sh to get the best performance of HTransE, HRotatE, RotatE, TransE, and ComplEx on five widely used datasets (FB15k, FB15k-237, wn18, wn18rr, Yago3-10).
 
 The run.sh script provides an easy way to search hyper-parameters:
 
