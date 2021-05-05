@@ -46,11 +46,11 @@ CUDA_VISIBLE_DEVICES=0 python -u codes/run.py --do_train \
  --do_valid \
  --do_test \
  --data_path data/FB15k \
- --model RotatE \
+ --model HTransE \
  -n 128 -b 256 -d 1000 \
  -g 24.0 -a 1.5 -adv \
  -lr 0.0001 --max_steps 150000 \
- -save models/RotatE_FB15k_0 --test_batch_size 16 -de
+ -save models/HTransE_FB15k_0 --test_batch_size 16 -de
 ```
    Check argparse configuration at codes/run.py for more arguments and more details.
 
@@ -64,7 +64,7 @@ To reprocude the best results, you can run the bash commands in best_config.sh t
 
 The run.sh script provides an easy way to search hyper-parameters:
 
-    bash run.sh train HRotatE FB15k 0 0 256 128 1000 24.0 1.5 0.0001 150000 16 -de
+    bash run.sh train HTransE FB15k 0 0 256 128 1000 24.0 1.5 0.0001 150000 16 -de
 
 
 **Results of the HRotatE model**
